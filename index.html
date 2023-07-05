@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alarmly</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap"
@@ -13,10 +13,11 @@
 </head>
 
 <body>
-    <div class="setAlarm">
-        <i class="fa fa-bell"></i>
-        <input type="text" class="textField" placeholder="Set alarm for...">
-    </div>
+    <form class="setAlarm">
+        <button type="submit" class="submitBtn"><i class="fa fa-bell"></i></button>
+        <input type="text" class="textField" placeholder="Set alarm for..." name="alarm-title" required aria-required="true" aria-placeholder="Set Alarm">
+        <input type="time" class="time" name="time" min="12:00" max="24:00" pattern="[0-9]{2}:[0-9]{2}" required aria-required="true">
+    </form>
 
     <br><br>
     <div class="getAlarm">

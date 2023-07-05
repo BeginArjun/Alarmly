@@ -7,7 +7,50 @@
 }
 *{
     margin:0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
+}
+body{
     font-family: 'Inter',sans-serif;
+    padding: 1rem;
+    overflow-x: hidden;
+}
+/* Styling for setAlarm (Container) */
+.setAlarm{
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+/* Submit Button */
+.submitBtn{
+    border:5px solid var(--primary-color);
+    background-color: white;
+    width:45px;
+    height:3rem;
+    color:#FFC803;
+}
+
+/* Styling for text field (Set alarm for) */
+.textField{
+    background-color: var(--secondary-color);
+    border:5px solid var(--primary-color);
+    color:var(--secondary-text-color);
+    font-family: 'Inter',sans-serif;
+    width:50%;
+    height:3rem;
+    font-size: 1rem;
+}
+/* No outline on focus */
+input:focus{
+    outline: none;
+}
+/* Time */
+.time{
+    height:3rem;
+    border:3px solid var(--primary-color);
+    font-size: 1rem;
 }
