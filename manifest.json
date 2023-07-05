@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Alarmly",
+    "description": "An extension to set up alarms",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": ""
+    }
+  }
