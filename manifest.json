@@ -5,6 +5,7 @@
     "version": "1.0",
     "action": {
       "default_popup": "index.html",
-      "default_icon": ""
-    }
+      "default_icon": "logo.png"
+    },
+    "author":"jayshrma161@gmail.com"
   }
